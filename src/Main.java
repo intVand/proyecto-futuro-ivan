@@ -9,7 +9,7 @@ public abstract class Main {
 
     }
 
-    public static String veredicto (String valor1, String valor2) {
+    private static String veredicto (String valor1, String valor2) {
 
 
         if (valor1.equals(valor2)) {
