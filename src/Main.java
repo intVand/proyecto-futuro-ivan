@@ -1,21 +1,24 @@
 
-public class Main {
-    public static void main(String[] args) {
 
-        System.out.println("Estudiante " + args[0] + ": ");
+    public class Main {
+        public static void main(String[] args) {
 
-        System.out.println(veredicto(args[1], args[2]));
+            System.out.println("Estudiante " + args[0] + ": ");
 
-    }
-
-    private static String veredicto (String valor1, String valor2) {
-
-        if(Integer.parseInt(valor1) > Integer.parseInt(valor2)) {
-            return "Poco tiempo de estudio. Debes dedicar más tiempo.";
-        } else if (Integer.parseInt(valor1) == Integer.parseInt(valor2)) {
-            return "Bien. Pero una hora de estudio para cada módulo puede ser insuficiente.";
+            System.out.println(veredicto(args[1], args[2]));
 
         }
-        return "Ideal. Trabajas los contenidos en casa.";
+
+        // Iván Bonmatí Baeza
+
+        private static String veredicto (String valor1, String valor2) {
+
+            if(Integer.parseInt(valor1) > Integer.parseInt(valor2)) {
+                return "Poco tiempo de estudio. Debes dedicar más tiempo.";
+            } else if (Integer.parseInt(valor1) == Integer.parseInt(valor2)) {
+                return "Bien. Pero una hora de estudio para cada módulo puede ser insuficiente.";
+
+            }
+            return "Ideal. Trabajas los contenidos en casa.";
+        }
     }
-}
